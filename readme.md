@@ -1,6 +1,7 @@
 
+# User Profile Node API - Testing Guide
 
-This guide provides instructions for running unit and end-to-end tests for the User Profile API.
+This guide provides instructions for running unit and end-to-end tests for the User Profile node API.
 
 ## Getting Started
 
@@ -8,44 +9,62 @@ To run the tests for the User Profile API, follow these steps:
 
 ### Prerequisites
 
-- Node.js and npm installed on your machine
+Make sure you have the following installed on your machine:
+- Node.js and npm
 - MySQL database configured and running
-- Git installed on your machine
+- Git
 
 ### Instructions
 
-1. Require MySQL, Node
+1. **Clone the repository to your local machine:**
 
-2. Clone the repository to your local machine:
+   ```bash
+   git clone  https://github.com/sindhusid5/testing.git
+   ```
 
-3.Navigate to the project directory:
+2. **Navigate to the project directory:**
 
-`cd testing`
+   ```bash
+   cd testing
+   ```
 
-4. Install dependencies
+3. **Install dependencies:**
 
-`npm install` or
-`npm i`
+   ```bash
+   npm install
+   ```
 
-5. To check linting errors and fix them, use the following commands:
-   `npm run format` # Format code using Prettier
-   `npm run lint` # Find linting errors using ESLint
-   `npm run lint:fix` # Fix linting errors automatically
+4. **Check for linting errors and fix them (optional but recommended):**
 
-6. Set up the database:
-   Create a MySQL database and configure the connection settings in the .env file.
+   ```bash
+   npm run format    # Format code using Prettier
+   npm run lint      # Find linting errors using ESLint
+   npm run lint:fix  # Fix linting errors automatically
+   ```
 
-7. Running Test:
-   `npm run test`
-   This command executes both unit testing and end to end testing.
+5. **Set up the database:**
 
-Test Cases
-Unit Tests
-Positive Case: should be able to retrieve my user entity
-Negative Case: should not be able to retrieve a different user entity and return appropriate error code
-Negative Case: should not be able to retrieve an entity if not authenticated and return appropriate error code
+   - Create a MySQL database.
+   - Configure the connection settings in the `.env` file.
 
-End-to-End Tests
-Positive Case: Should be able to retrieve my user entity
-Negative Case: should not be able to retrieve a different user entity and return appropriate error code
-Negative Case: should not be able to retrieve an entity if not authenticated and return appropriate error code
+6. **Run the tests:**
+
+   ```bash
+   npm run test
+   ```
+
+   This command executes both unit and end-to-end tests.
+
+### Test Cases
+
+#### Unit Tests
+
+- **Positive Case:** Should be able to retrieve my user entity.
+- **Negative Case:** Should not be able to retrieve a different user entity and should return the appropriate error code.
+- **Negative Case:** Should not be able to retrieve an entity if not authenticated and should return the appropriate error code.
+
+#### End-to-End Tests
+ 
+- **Positive Case:** Should be able to retrieve my user entity.
+- **Negative Case:** Should not be able to retrieve a different user entity and should return the appropriate error code.
+- **Negative Case:** Should not be able to retrieve an entity if not authenticated and should return the appropriate error code.
