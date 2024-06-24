@@ -20,7 +20,7 @@ To run the tests for the User Profile API, follow these steps:
 
 3.Navigate to the project directory:
 
-`cd assignment8`
+`cd testing`
 
 4. Install dependencies
 
