@@ -19,13 +19,13 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository to your local machine:**
 
    ```bash
-   git clone  https://github.com/sindhusid5/testing.git
+   git clone   https://github.com/sindhusid5/nodejs-testing.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd testing
+   cd nodejs-testing
    ```
 
 3. **Install dependencies:**
